@@ -1,6 +1,5 @@
 <template>
-  <div>
-    工作经历
+  <div class="resume" id="section2">
   </div>
 </template>
 
@@ -8,4 +7,10 @@
 
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+
+  .resume {
+    background-color: skyblue;
+    height: 400px;
+  }
+</style>

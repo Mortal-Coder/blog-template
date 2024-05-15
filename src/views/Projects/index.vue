@@ -1,9 +1,14 @@
 <template>
-  <div>项目经验</div>
+  <div class="projects" id="section3"></div>
 </template>
 
 <script setup lang='ts'>
 
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+  .projects {
+    background-color: green;
+    height: 400px;
+  }
+</style>
