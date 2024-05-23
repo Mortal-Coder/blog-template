@@ -55,7 +55,7 @@
 <style lang="scss" scoped>
   .services {
     background-color: #f8f9fa;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
 
     .services-title {
       text-align: center;

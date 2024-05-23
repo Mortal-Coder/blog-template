@@ -7,22 +7,22 @@
       <div class="navigation">
         <ul class="top-nav">
           <li>
-            <router-link to="/">HOME</router-link>
+            <router-link to="/" :class="{ active: y < 900 }">HOME{{ y }}</router-link>
           </li>
           <li>
-            <router-link to="/services/#section1" active-class="active">SERVICES</router-link>
+            <router-link to="/services/#section1" :class="{ active: y >= 900 && y < 1744 }">SERVICES</router-link>
           </li>
           <li>
-            <router-link to="/resume/#section2" active-class="active">RESUME</router-link>
+            <router-link to="/resume/#section2" :class="{ active: y >= 1744 && y < 3530 }">RESUME</router-link>
           </li>
           <li>
-            <router-link to="/projects/#section3" active-class="active">PROJECTS</router-link>
+            <router-link to="/projects/#section3" :class="{ active: y >= 3530 && y < 5154 }">PROJECTS</router-link>
           </li>
           <li>
-            <router-link to="/blog/#section4" active-class="active">BLOG</router-link>
+            <router-link to="/blog/#section4" :class="{ active: y >= 5154 && y < 5818 }">BLOG</router-link>
           </li>
           <li>
-            <router-link to="/contact/#section5" active-class="active">CONTACT</router-link>
+            <router-link to="/contact/#section5" :class="{ active: y >= 5818 }">CONTACT</router-link>
           </li>
         </ul>
         <ul class="icon-links">

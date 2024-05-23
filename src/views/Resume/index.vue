@@ -96,7 +96,7 @@
   <section class="expertise">
     <div class="container">
       <div class="img">
-        <img src="" alt="">
+        <img src="@\assets\skills.jpg" alt="">
       </div>
       <div class="skill-icons">
         <div class="description">
@@ -344,12 +344,19 @@
 
   .expertise {
     background-color: white;
-    padding: 80px 0;
+    padding: 20px 0 0 0;
 
     .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .img {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
       .skill-icons {
         width: 50%;

@@ -106,7 +106,85 @@
     </div>
   </section>
   <section class="clients">
-    站位
+    <div class="container">
+      <h2>Clients Say</h2>
+      <p>Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.
+      </p>
+      <div class="carousel">
+        <el-carousel height="auto" arrow="never" indicator-position="outside">
+          <el-carousel-item class="carousel-item">
+            <div class="card-item">
+              <img class="img" src="@/assets/1.jpg" alt="">
+              <div class="content">
+                <h5>Abstract images</h5>
+                <span>※</span>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,but the majority have suffered
+                  alteration in some form
+                </p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img class="img" src="@/assets/1.jpg" alt="">
+              <div class="content">
+                <h5>Abstract images</h5>
+                <span>※</span>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,but the majority have suffered
+                  alteration in some form
+                </p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img class="img" src="@/assets/1.jpg" alt="">
+              <div class="content">
+                <h5>Abstract images</h5>
+                <span>※</span>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,but the majority have suffered
+                  alteration in some form
+                </p>
+              </div>
+            </div>
+          </el-carousel-item>
+          <el-carousel-item class="carousel-item">
+            <div class="card-item">
+              <img class="img" src="@/assets/1.jpg" alt="">
+              <div class="content">
+                <h5>Abstract images</h5>
+                <span>※</span>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,but the majority have suffered
+                  alteration in some form
+                </p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img class="img" src="@/assets/1.jpg" alt="">
+              <div class="content">
+                <h5>Abstract images</h5>
+                <span>※</span>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,but the majority have suffered
+                  alteration in some form
+                </p>
+              </div>
+            </div>
+            <div class="card-item">
+              <img class="img" src="@/assets/1.jpg" alt="">
+              <div class="content">
+                <h5>Abstract images</h5>
+                <span>※</span>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available,but the majority have suffered
+                  alteration in some form
+                </p>
+              </div>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -272,6 +350,89 @@
 
   .clients {
     background-color: white;
-    height: 200px;
+    padding: 80px 0;
+    text-align: center;
+
+    .container {
+      h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 1rem 0;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 1rem 0;
+        color: #8492a6;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .carousel {
+        margin-top: 4rem;
+        // border: 1px solid black;
+
+        .carousel-item {
+          height: auto;
+          display: flex;
+
+          .card-item {
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+            padding: 30px;
+            text-align: left;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+            img {
+              display: block;
+              width: 5rem;
+              height: 5rem;
+              transition: transform 0.3s ease;
+              border-radius: 50%;
+            }
+
+            .content {
+
+              h5 {
+                font-size: 1.2rem;
+                font-weight: 600;
+                line-height: 1.5;
+                margin: 1rem 0;
+              }
+
+              span {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                margin: 1rem 0;
+                color: #8492a6;
+                display: block;
+              }
+
+              p {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                margin: 1rem 0;
+                color: #8492a6;
+                max-width: 600px;
+                margin: 0 auto;
+              }
+            }
+
+          }
+        }
+      }
+    }
   }
+
 </style>

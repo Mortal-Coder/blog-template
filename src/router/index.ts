@@ -48,7 +48,7 @@ const router = createRouter({
       return savedPosition;
     } else if (to.hash) {
       // 如果目标路由有 hash，滚动到 hash 对应的元素位置
-      return { el: to.hash, top: 160, behavior: "smooth" };
+      return { el: to.hash, top: 80, behavior: "smooth" };
     } else {
       // 默认滚动到页面顶部
       return { left: 0, top: 0, behavior: "smooth" };

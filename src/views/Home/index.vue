@@ -1,6 +1,24 @@
 <template>
   <Nav></Nav>
-  <section class="abc"></section>
+  <section class="hero-area">
+    <div class="container">
+      <div class="introduce">
+        <div class="popover">
+          <span class="pop">Now</span>
+          <span class="over">Looking for a Job!</span>
+        </div>
+        <h1>Here I'am Mclz</h1>
+        <p>Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of
+          the development
+        </p>
+        <el-button type="primary" size="large">Hire Me</el-button>
+        <el-button size="large" class="sec-btn">Contact Me</el-button>
+      </div>
+      <div class="my-picture">
+        <img src="@\assets\home.png" alt="">
+      </div>
+    </div>
+  </section>
   <section class="bg-gray">
     <div class="container">
       <div class="card">
@@ -27,6 +45,43 @@
   <Projects></Projects>
   <Blog></Blog>
   <Contact></Contact>
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h4>Queue</h4>
+        <p>Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.
+        </p>
+      </div>
+      <ul class="icon-list">
+        <li class="icon-item">
+          <a href="">M</a>
+        </li>
+        <li class="icon-item">
+          <a href="">C</a>
+        </li>
+        <li class="icon-item">
+          <a href="">L</a>
+        </li>
+        <li class="icon-item">
+          <a href="">Z</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <div class="right">© 2024Queue. Design By <a href="">MCLZ</a></div>
+  <el-backtop :bottom="30" :right="30">
+    <div class="back-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </div>
+  </el-backtop>
+  <div class="bg">
+    <div class="container">
+      <div class="card"></div>
+    </div>
+  </div>
 </template>
 
 <script setup lang='ts'>
@@ -54,15 +109,100 @@
 </script>
 
 <style lang="scss" scoped>
-  .abc {
-    height: 400px;
-    background-color: white;
+  .hero-area {
+    background-image: url(@/assets/home-shape.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 170px 0 0 0;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .introduce {
+        width: 60%;
+        padding-top: 80px;
+
+        .popover {
+          border-radius: 30px;
+          display: inline-block;
+          background-color: white !important;
+          box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+          padding: 12px 15px;
+          font-size: 14px;
+          margin-bottom: 1rem;
+
+          span.pop {
+            background-color: #007bff !important;
+            color: white;
+            padding: .35em .65em;
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-right: .3em;
+          }
+        }
+
+        h1 {
+          margin: 0;
+          font-size: 56px;
+          color: #161c2d;
+          font-weight: 400;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          color: #8492a6;
+          font-size: 14px;
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+
+        .el-button {
+          border-radius: 10px;
+          padding: 8px 40px;
+          transition: all .5s ease;
+
+          &:hover {
+            background-color: #0056b3;
+            color: white;
+            transform: translateY(-2px);
+          }
+        }
+
+        .sec-btn {
+          border: 1px solid $primaryColor;
+          color: $primaryColor;
+          background-color: transparent;
+
+          &:hover {
+            background-color: $primaryColor;
+            color: white;
+          }
+        }
+      }
+
+      .my-picture {
+        width: 40%;
+
+        img {
+          background-color: transparent;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+    }
   }
 
   .bg-gray {
     background-color: #f8f9fa;
+    height: 110px;
+
+    position: relative;
 
     .container {
+      position: relative;
 
       .card {
         background-color: white;
@@ -70,8 +210,8 @@
         padding: 20px;
         box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
         display: flex;
-        position: relative;
-        top: -110px;
+        position: absolute;
+        bottom: -110px;
 
         .contact {
           background-color: #f8f9fa;
@@ -158,7 +298,95 @@
     }
   }
 
-  body {
-    height: 1000px;
+  .footer {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+
+    .container {
+      h4 {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 1rem 0;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 1rem 0;
+        color: #8492a6;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .icon-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+
+        li {
+          margin: 0 2px;
+        }
+
+        a {
+          color: #161c2d;
+          border: 1px solid #161c2d;
+          display: inline-block;
+          height: 32px;
+          text-align: center;
+          font-size: 15px;
+          width: 32px;
+          line-height: 32px;
+          border-radius: 50%;
+
+          &:hover {
+            color: white;
+            background-color: $primaryColor;
+            border: 1px solid $primaryColor;
+          }
+        }
+      }
+
+
+    }
   }
+
+  .right {
+    background-color: #161c2d;
+    padding: 25px 0;
+    color: #adb5bd;
+    text-align: center;
+
+    a {
+      color: $primaryColor;
+    }
+  }
+
+  .el-backtop {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+
+    .back-top {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      background-color: rgba(0, 123, 255, 0.3) !important;
+      border: 1px solid rgba(0, 123, 255, 0.3) !important;
+      border-radius: 8px;
+      text-align: center;
+      color: #161c2d;
+
+      &:hover {
+        background-color: rgba(0, 123, 255, 1) !important;
+        border: 1px solid rgba(0, 123, 255, 0.6) !important;
+        color: white;
+        transition: all .5s ease;
+      }
+    }
+  }
+
 </style>

@@ -57,7 +57,7 @@
         </div>
       </div>
       <el-form :model="form" label-width="auto" class="form">
-        <el-row gutter="24">
+        <el-row :gutter="24">
           <el-col :span="12">
             <el-form-item prop="firstName">
               <el-input v-model="form.firstName" placeholder="First Name:" size="large"></el-input>
@@ -192,6 +192,12 @@
           padding: 0 34px;
           border-radius: 8px;
           height: 40px;
+
+          &:hover {
+            background-color: #0056b3;
+            color: white;
+            transform: translateY(-2px);
+          }
         }
       }
     }
