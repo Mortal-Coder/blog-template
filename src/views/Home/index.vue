@@ -363,12 +363,17 @@
           <p>Nationality:<a href="javascript:;">China</a></p>
         </div>
         <div class="brief">
-          <h4>I Am <span class="typewriter">Web Designer</span></h4>
-          <P class="text-light-muted">Obviously I'm a Web Designer. Web Developer with over 2 years of experience.
+          <h4>I Am
+            <vuetyped :showCuror="false" :smart-backspace="false" :strings="writeTextArr" :type-speed="100"
+              :loop="true">
+              <div class="typing"></div>
+            </vuetyped>
+          </h4>
+          <p class="text-light-muted">Obviously I'm a Web Designer. Web Developer with over 2 years of experience.
             Experienced with all stages of
             the development cycle for dynamic web projects. The as opposed to using 'Content here,content here', making
             it look like readable English.
-          </P>
+          </p>
         </div>
       </div>
     </div>
@@ -403,18 +408,14 @@
   </footer>
   <div class="right">© 2024Mclz. Design By <a href="">MCLZ</a></div>
   <el-backtop :bottom="30" :right="30">
-    <div class="back-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+    <div class="back-top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <line x1="12" y1="19" x2="12" y2="5"></line>
         <polyline points="5 12 12 5 19 12"></polyline>
       </svg>
     </div>
   </el-backtop>
-  <div class="bg">
-    <div class="container">
-      <div class="card"></div>
-    </div>
-  </div>
 </template>
 
 <script setup lang='ts'>
@@ -423,22 +424,11 @@
   import Projects from '@/views/Projects/index.vue'
   import Blog from '@/views/Blog/index.vue'
   import Contact from '@/views/Contact/index.vue'
+  import { ref } from 'vue'
 
-  window.onload = function () {
-    const element = document.querySelector('.typewriter');
-    const text = element!.textContent;
-
-    // 清空文字内容，使得动画效果生效
-    element!.textContent = '';
-
-    // 逐字符添加文字内容，触发动画
-    for (let i = 0; i < text!.length; i++) {
-      setTimeout(() => {
-        element!.textContent += text![i];
-      }, 150 * i); // 调整字符出现间隔时间，以控制打字速度
-    }
-  };
-
+  const writeTextArr = ref([
+    'Web Designer', 'Web Developer', 'Photographer'
+  ])
 </script>
 
 <style lang="scss" scoped>
@@ -463,7 +453,7 @@
           background-color: white !important;
           box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
           padding: 12px 15px;
-          font-size: 14px;
+          font-size: 15px;
           margin-bottom: 1rem;
 
           span.pop {
@@ -473,6 +463,7 @@
             border-radius: 12px;
             font-size: 0.75em;
             margin-right: .3em;
+            font-weight: 600;
           }
         }
 
@@ -480,13 +471,13 @@
           margin: 0;
           font-size: 56px;
           color: #161c2d;
-          font-weight: 400;
+          font-weight: 500;
           margin-bottom: 1rem;
         }
 
         p {
           color: #8492a6;
-          font-size: 14px;
+          font-size: 15px;
           margin: 0 auto;
           margin-bottom: 2rem;
         }
@@ -495,6 +486,8 @@
           border-radius: 10px;
           padding: 8px 40px;
           transition: all .5s ease;
+          font-size: 15px;
+          font-family: "NunitoSans";
 
           &:hover {
             background-color: #0056b3;
@@ -569,6 +562,7 @@
 
           p {
             margin: 0.5rem 0;
+            font-size: 15px;
 
             a {
               color: #707070;
@@ -582,48 +576,24 @@
           border-radius: 8px;
           width: 75%;
 
-          .typewriter {
-            overflow: hidden;
-            /* 文字溢出部分隐藏 */
-            border-right: .15em solid $primaryColor;
-            /* 光标样式 */
-            white-space: nowrap;
-            /* 文字不换行 */
-            margin: 0 auto;
-            /* 文字居中 */
-            letter-spacing: .15em;
-            /* 字符间距 */
-            animation:
-              typing 3.5s steps(40, end) infinite,
-              blink-caret .75s step-end infinite;
-            /* 光标闪烁 */
-          }
+          h4 {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-top: 0;
+            font-weight: 700;
+            display: flex;
+            justify-content: flex-start;
 
-          @keyframes typing {
-            from {
-              width: 0
-            }
-
-            to {
-              width: 100%
-            }
-          }
-
-          @keyframes blink-caret {
-
-            from,
-            to {
-              border-color: transparent
-            }
-
-            50% {
-              border-color: $primaryColor
+            .typing {
+              color: $primaryColor;
+              display: inline-block;
+              margin-left: .5rem;
             }
           }
 
           .text-light-muted {
             color: #8492a6 !important;
-            margin-top: 1rem;
+            margin-top: .75rem;
             font-size: 1.1rem;
           }
         }

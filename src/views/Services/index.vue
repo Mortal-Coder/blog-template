@@ -113,7 +113,7 @@
 
       p {
         color: #8492a6;
-        font-size: 14px;
+        font-size: 15px;
         max-width: 600px;
         margin: 0 auto;
       }
@@ -150,13 +150,13 @@
           margin: 0;
           font-size: 18px;
           color: #161c2d;
-          font-weight: 400;
+          font-weight: 600;
           margin-bottom: 1.5rem;
         }
 
         p {
           color: #8492a6;
-          font-size: 14px;
+          font-size: 15px;
           max-width: 600px;
           margin: 0 auto;
         }
@@ -165,7 +165,7 @@
           display: inline-block;
           color: $primaryColor;
           text-decoration: none;
-          font-size: 14px;
+          font-size: 15px;
           margin-top: 1.5rem;
           transition: all 0.3s ease;
 

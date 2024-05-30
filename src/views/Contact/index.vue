@@ -18,7 +18,7 @@
             <h3>Phone</h3>
             <p>Promising development turmoil inclusive education transformative community</p>
             <a href="mailto:  " target="_blank">
-              +189 8176 2421
+              +189 8176 24**
             </a>
           </div>
         </div>
@@ -48,9 +48,8 @@
               </svg>
             </span>
             <h3>Location</h3>
-            <p>C/54 Northwest Freeway,Suite 558,
-              Houston,USA 485</p>
-            <a href="http://www.baidu.com" target="_blank">
+            <p>No. 500, Cuijiadian Road, Chenghua District, Chengdu, Sichuan Province</p>
+            <a href="https://www.google.com/maps" target="_blank">
               View on Google map
             </a>
           </div>

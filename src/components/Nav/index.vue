@@ -7,38 +7,37 @@
       <div class="navigation">
         <ul class="top-nav">
           <li>
-            <router-link to="/" :class="{ active: y < 900 }">HOME</router-link>
+            <router-link to="/" :class="{ active: y < 706 }">HOME</router-link>
           </li>
           <li>
-            <router-link to="/services/#section1" :class="{ active: y >= 900 && y < 1744 }">SERVICES</router-link>
+            <router-link to="/services/#section1" :class="{ active: y >= 706 && y < 1586 }">SERVICES</router-link>
           </li>
           <li>
-            <router-link to="/resume/#section2" :class="{ active: y >= 1744 && y < 3530 }">RESUME</router-link>
+            <router-link to="/resume/#section2" :class="{ active: y >= 1586 && y < 3377 }">RESUME</router-link>
           </li>
           <li>
-            <router-link to="/projects/#section3" :class="{ active: y >= 3530 && y < 5154 }">PROJECTS</router-link>
+            <router-link to="/projects/#section3" :class="{ active: y >= 3377 && y < 5043 }">PROJECTS</router-link>
           </li>
           <li>
-            <router-link to="/blog/#section4" :class="{ active: y >= 5154 && y < 5818 }">BLOG</router-link>
+            <router-link to="/blog/#section4" :class="{ active: y >= 5043 && y < 5741 }">BLOG</router-link>
           </li>
           <li>
-            <router-link to="/contact/#section5" :class="{ active: y >= 5818 }">CONTACT</router-link>
+            <router-link to="/contact/#section5" :class="{ active: y >= 5741 }">CONTACT</router-link>
           </li>
         </ul>
         <ul class="icon-links">
           <li>
             <a href="#"><i class="icon-color">
-                <svg t="1716793988524" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                  xmlns="http://www.w3.org/2000/svg" p-id="2598" width="16" height="16">
+                <svg t="1716952119108" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="28663" width="18" height="18">
                   <path
-                    d="M740.693333 539.306667l0-187.733333-157.013333 0L583.68 238.933333c0 0 0-51.2 58.026667-51.2 58.026667 0 153.6 0 153.6 0L795.306667 0 549.546667 0C378.88 0 365.226667 201.386667 365.226667 201.386667l0 146.773333-136.533333 0 0 187.733333 136.533333 0L365.226667 1024l215.04 0L580.266667 539.306667 740.693333 539.306667z"
-                    p-id="2599">
-                  </path>
+                    d="M926.47619 355.644952V780.190476a73.142857 73.142857 0 0 1-73.142857 73.142857H170.666667a73.142857 73.142857 0 0 1-73.142857-73.142857V355.644952l304.103619 257.828572a170.666667 170.666667 0 0 0 220.745142 0L926.47619 355.644952zM853.333333 170.666667a74.044952 74.044952 0 0 1 26.087619 4.778666 72.704 72.704 0 0 1 30.622477 22.186667 73.508571 73.508571 0 0 1 10.678857 17.67619c3.169524 7.509333 5.12 15.652571 5.607619 24.210286L926.47619 243.809524v24.380952L559.469714 581.241905a73.142857 73.142857 0 0 1-91.306666 2.901333l-3.632762-2.925714L97.52381 268.190476v-24.380952a72.899048 72.899048 0 0 1 40.155428-65.292191A72.97219 72.97219 0 0 1 170.666667 170.666667h682.666666z"
+                    p-id="28664"></path>
                 </svg>
               </i></a>
           </li>
           <li>
-            <a href="#"><i class="icon-color">
+            <a href="https://github.com/Mortal-Coder" target="_blank"><i class="icon-color">
                 <svg t="1716794568617" class="icon" viewBox="0 0 1024 1024" version="1.1"
                   xmlns="http://www.w3.org/2000/svg" p-id="6588" width="18" height="18">
                   <path
@@ -48,12 +47,12 @@
               </i></a>
           </li>
           <li>
-            <a href="#"><i class="icon-color">
-                <svg t="1716794226762" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                  xmlns="http://www.w3.org/2000/svg" p-id="4523" width="16" height="16">
+            <a href="https://gitee.com/mclz2645" target="_blank"><i class="icon-color">
+                <svg t="1716957200266" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="34061" width="18" height="18">
                   <path
-                    d="M512 1024C229.222 1024 0 794.778 0 512S229.222 0 512 0s512 229.222 512 512-229.222 512-512 512z m259.149-568.883h-290.74a25.293 25.293 0 0 0-25.292 25.293l-0.026 63.206c0 13.952 11.315 25.293 25.267 25.293h177.024c13.978 0 25.293 11.315 25.293 25.267v12.646a75.853 75.853 0 0 1-75.853 75.853h-240.23a25.293 25.293 0 0 1-25.267-25.293V417.203a75.853 75.853 0 0 1 75.827-75.853h353.946a25.293 25.293 0 0 0 25.267-25.292l0.077-63.207a25.293 25.293 0 0 0-25.268-25.293H417.152a189.62 189.62 0 0 0-189.62 189.645V771.15c0 13.977 11.316 25.293 25.294 25.293h372.94a170.65 170.65 0 0 0 170.65-170.65V480.384a25.293 25.293 0 0 0-25.293-25.267z"
-                    p-id="4524"></path>
+                    d="M850.016 438.016H471.008q-14.016 0-23.488 9.504t-9.504 23.488v82.016q0 14.016 9.504 23.488t23.488 9.504h230.016q14.016 0 23.488 9.504t9.504 23.488v16.992q0 19.008-7.488 37.504t-20.992 32-32 20.992-37.504 7.488h-314.016q-12.992 0-23.008-9.504t-10.016-23.488v-312.992q0-19.008 8-37.504t21.504-32 32-20.992 37.504-7.488h462.016q12.992 0 23.008-10.016t10.016-23.008V173.984q0-12.992-10.016-23.008t-23.008-10.016H388q-67.008 0-123.488 33.504T174.496 264.48t-33.504 123.488v462.016q0 12.992 10.016 23.008t23.008 10.016h486.016q44.992 0 85.504-16.992t72-48.512 48.512-72 16.992-85.504v-188.992q0-14.016-10.016-23.488t-23.008-9.504z"
+                    p-id="34062"></path>
                 </svg>
               </i></a>
           </li>
@@ -84,8 +83,10 @@
         width: 100px;
         height: 40px;
         line-height: 40px;
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
+        font-weight: 600;
+        letter-spacing: 2px;
       }
 
       .navigation {
@@ -95,13 +96,14 @@
           display: flex;
           align-items: center;
           list-style: none;
+          margin-right: 1rem;
 
           li {
 
             a {
               text-decoration: none;
               font-size: 14px;
-              font-weight: 400;
+              font-weight: 700;
               padding: 10px 15px;
               border-radius: 5px;
               transition: all 0.3s;
@@ -123,10 +125,13 @@
           list-style: none;
 
           li {
+            height: 18px;
+            line-height: 18px;
+
             a {
               text-decoration: none;
               font-size: 14px;
-              padding: 10px;
+              padding: 10px 6px;
               transition: all 0.3s;
 
               .icon-color {

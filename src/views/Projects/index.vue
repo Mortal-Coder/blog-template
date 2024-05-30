@@ -6,7 +6,7 @@
       </p>
       <div class="card-list">
         <div class="card">
-          <img class="img" src="@/assets/1.jpg" alt="">
+          <img class="img" src="@/assets/1.png" alt="">
           <div class="card-mask">
           </div>
           <div class="content">
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="img" src="@/assets/2.jpg" alt="">
+          <img class="img" src="@/assets/2.png" alt="">
           <div class="card-mask">
           </div>
           <div class="content">
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="img" src="@/assets/3.jpg" alt="">
+          <img class="img" src="@/assets/3.png" alt="">
           <div class="card-mask">
           </div>
           <div class="content">
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="img" src="@/assets/4.jpg" alt="">
+          <img class="img" src="@/assets/4.png" alt="">
           <div class="card-mask">
           </div>
           <div class="content">
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="img" src="@/assets/5.jpg" alt="">
+          <img class="img" src="@/assets/5.png" alt="">
           <div class="card-mask">
           </div>
           <div class="content">
@@ -86,7 +86,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="img" src="@/assets/6.jpg" alt="">
+          <img class="img" src="@/assets/6.png" alt="">
           <div class="card-mask">
           </div>
           <div class="content">
@@ -114,7 +114,7 @@
         <el-carousel height="auto" arrow="never" indicator-position="outside">
           <el-carousel-item class="carousel-item">
             <div class="card-item">
-              <img class="img" src="@/assets/1.jpg" alt="">
+              <img class="img" src="@/assets/userhead.svg" alt="">
               <div class="content">
                 <h5>Abstract images</h5>
                 <span>※</span>
@@ -125,7 +125,7 @@
               </div>
             </div>
             <div class="card-item">
-              <img class="img" src="@/assets/1.jpg" alt="">
+              <img class="img" src="@/assets/userhead.svg" alt="">
               <div class="content">
                 <h5>Abstract images</h5>
                 <span>※</span>
@@ -136,7 +136,7 @@
               </div>
             </div>
             <div class="card-item">
-              <img class="img" src="@/assets/1.jpg" alt="">
+              <img class="img" src="@/assets/userhead.svg" alt="">
               <div class="content">
                 <h5>Abstract images</h5>
                 <span>※</span>
@@ -149,7 +149,7 @@
           </el-carousel-item>
           <el-carousel-item class="carousel-item">
             <div class="card-item">
-              <img class="img" src="@/assets/1.jpg" alt="">
+              <img class="img" src="@/assets/userhead.svg" alt="">
               <div class="content">
                 <h5>Abstract images</h5>
                 <span>※</span>
@@ -160,7 +160,7 @@
               </div>
             </div>
             <div class="card-item">
-              <img class="img" src="@/assets/1.jpg" alt="">
+              <img class="img" src="@/assets/userhead.svg" alt="">
               <div class="content">
                 <h5>Abstract images</h5>
                 <span>※</span>
@@ -171,7 +171,7 @@
               </div>
             </div>
             <div class="card-item">
-              <img class="img" src="@/assets/1.jpg" alt="">
+              <img class="img" src="@/assets/userhead.svg" alt="">
               <div class="content">
                 <h5>Abstract images</h5>
                 <span>※</span>
@@ -252,8 +252,11 @@
 
           img {
             display: block;
-            width: 100%;
             transition: transform 0.3s ease;
+            object-fit: cover;
+            object-position: 0% 50%;
+            width: 100%;
+            height: 100%;
           }
 
           .card-mask {

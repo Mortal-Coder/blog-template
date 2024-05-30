@@ -87,7 +87,7 @@
           <h5>Happy Users</h5>
         </div>
         <div class="card">
-          <h2><span>36</span>+</h2>
+          <h2><span>6</span>+</h2>
           <h5>Years of expe.</h5>
         </div>
       </div>
@@ -393,37 +393,37 @@
         </div>
         <div class="icon-list">
           <div class="icon-item">
-            <img src="@/assets/bootstrap.svg" alt="">
-            <span class="progress">70<i>%</i></span>
+            <img src="@/assets/svg/html.svg" alt="">
+            <span class="progress">90<i>%</i></span>
           </div>
           <div class="icon-item">
-            <img src="@/assets/nodejs-icon.svg" alt="">
-            <span class="progress">55<i>%</i></span>
+            <img src="@/assets/svg/css.svg" alt="">
+            <span class="progress">85<i>%</i></span>
           </div>
           <div class="icon-item">
-            <img src="@/assets/react.svg" alt="">
-            <span class="progress">68<i>%</i></span>
+            <img src="@/assets/svg/javascript.svg" alt="">
+            <span class="progress">80<i>%</i></span>
           </div>
           <div class="icon-item">
-            <img src="@/assets/post_gray_sql.svg" alt="">
-            <span class="progress">75<i>%</i></span>
+            <img src="@/assets/svg/vue3.svg" alt="">
+            <span class="progress">88<i>%</i></span>
           </div>
         </div>
         <div class="icon-list">
           <div class="icon-item">
-            <img src="@/assets/amazons3.svg" alt="">
-            <span class="progress">80<i>%</i></span>
+            <img src="@/assets/svg/sass.svg" alt="">
+            <span class="progress">74<i>%</i></span>
           </div>
           <div class="icon-item">
-            <img src="@/assets/android.svg" alt="">
-            <span class="progress">85<i>%</i></span>
+            <img src="@/assets/svg/less.svg" alt="">
+            <span class="progress">72<i>%</i></span>
           </div>
           <div class="icon-item">
-            <img src="@/assets/Angular.svg" alt="">
-            <span class="progress">70<i>%</i></span>
+            <img src="@/assets/svg/nodejs-icon.svg" alt="">
+            <span class="progress">48<i>%</i></span>
           </div>
           <div class="icon-item">
-            <img src="@/assets/mongodb.svg" alt="">
+            <img src="@/assets/svg/ElementUI.svg" alt="">
             <span class="progress">65<i>%</i></span>
           </div>
         </div>
